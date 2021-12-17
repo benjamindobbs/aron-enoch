@@ -46,3 +46,9 @@
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
   }
+  .trueCenter{
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
