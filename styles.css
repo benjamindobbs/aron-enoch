@@ -46,11 +46,31 @@
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
   }
+  .button {
+    background-color: transparent;
+    border: solid black 1px;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+  }
+  img{
+    height: 75%;
+    margin: auto;
+    justify-self: center;
+  }
   .trueCenter{
     display: flex;
+    position: fixed;
+    height: 80%;
+    width: 90%;
     flex-direction: column;
-   justify-content: center;
-   align-items: center;
+    justify-content: space-around;
+    align-items: center;
 }
 
 body{
@@ -165,6 +185,6 @@ i.fa-volume-up {
 i.fa-play-circle,
 i.fa-pause-circle,
 i.fa-step-forward,
-i.fa-step-backward {
-  cursor: pointer;
+i.fa-step-backward{
+cursor: pointer;
 }
