@@ -23,7 +23,7 @@
   
   /* When you mouse over the navigation links, change their color */
   .sidenav a:hover {
-    color: #f1f1f1;
+    color: lightblue;
   }
   
   /* Position and style the close button (top right corner) */
@@ -71,6 +71,11 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+}
+.border{
+  border: black solid 1px; 
+  border-radius: .5em; padding: .5em 1em;
+  text-align: center;
 }
 
 body{
