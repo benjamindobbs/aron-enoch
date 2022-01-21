@@ -1,0 +1,25 @@
+button{
+    background-color: transparent;
+    color: black;
+    border: 2px solid black;
+    max-height: 10%;
+    text-align: center;
+    padding: 20px 45px;
+    display: inline-block;
+    font-size: 20px;
+    border-radius: 20px;
+}
+img{
+    max-height: 80%;
+}
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
