@@ -9,7 +9,7 @@ button{
     font-size: 1em;
     border-radius: 1em;
 }
-img{
+.homeImg{
     max-height: 100%;
     max-width: 100%;
 }
