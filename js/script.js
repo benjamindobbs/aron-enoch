@@ -73,7 +73,7 @@ let track_list = [
     artist: "DJ Re:Code",
     image: "Image URL",
     path: "assets/mp3/05.mp3",
-    featPath: "assets/chars/Dyna_Assets.png",
+    featPath: "assets/chars/Dyna_Asset.png",
     bio: "Punkstar, rockstar, hyperpop star - no matter what you want to call Bee their skill is unmatched in all arenas. A member of I’m Letting Unseen Forces Take the Wheel and an incredible artist in their own right, Bee met Riri through her hunt to find someone to scream on a track at the last minute, only to discover the two work powerfully in tandem and have since become fast friends. Twitter comedian and a hilarious presence to be around, Riri admires Bee’s work ethic and style and wishes the two worked more, and plan to write guitar work together in the near future (Riri secretly hoping some of Bee’s amazing guitar skills will rub off on her.)",
   },
   {
@@ -89,6 +89,7 @@ let track_list = [
     artist: "DJ Re:Code",
     image: "Image URL",
     path: "assets/mp3/07.mp3",
+    featPath: "assets/chars/Recode2_Asset.png"
   },
   {
     name: "45 (feat. mothgirl)",
@@ -103,6 +104,7 @@ let track_list = [
     artist: "DJ Re:Code",
     image: "Image URL",
     path: "assets/mp3/09.mp3",
+    featPath: "assets/chars/Recode2_Asset.png",
   },
   {
     name: "out of my head [pt. 2] (feat. 65finally)",
