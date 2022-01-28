@@ -3,6 +3,7 @@
 <head>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 </head>
 <HTML>
 
@@ -11,15 +12,18 @@
     <script src="js/navDrawer.js"></script>
     <div id="main">
         <div class="trueCenter">
-            <div style="border: black solid 1px; border-radius: .5em; padding: .5em 1em;">
-            <h1> <strong> TrAcK PaGe </strong> </h1>
-            </div>
+            <div class="track-name"></div>
             <!-- <img src="./assets/temp_img.png"> -->
             <script src="js/player.js"></script>
             <button class="button" onclick="history.back()" style="align-self: flex-end;"> Back </button>
+            <h3> Lyrics </h3>
+            <div class="trackLyrics"> </div>
         </div>
     </div>
     <script src="js/script.js"> </script>
+    <script> 
+    loadTrack(0);
+    </script>
 </div>
 </body>
 

@@ -87,7 +87,7 @@ body{
 body.fade {
   opacity: 0;
 }
-
+/* Player CSS */
   .player {
     height: 95vh;
     display: flex;
@@ -107,6 +107,7 @@ body.fade {
     display: flex;
     flex-direction: row;
     align-items: center;
+    
   }
     
   .playpause-track,
@@ -114,9 +115,8 @@ body.fade {
   .next-track {
     padding: 25px;
     opacity: 0.8;
-    
     /* Smoothly transition the opacity */
-    transition: opacity .2s;
+    transition: opacity .4s;
   }
     
   /* Change the opacity when mouse is hovered */
@@ -148,6 +148,9 @@ body.fade {
   }
     
   .track-name {
+    border: black solid 1px; 
+    border-radius: .5em; 
+    padding: .5em .5em;
     font-size: 3rem;
   }
     
@@ -192,4 +195,13 @@ i.fa-pause-circle,
 i.fa-step-forward,
 i.fa-step-backward{
 cursor: pointer;
+}
+
+/* Styles to Rebuild Page */
+.trackHeader{
+ font-size:1.5em;
+}
+
+.trackLyrics{
+  font-size: 1rem;
 }
