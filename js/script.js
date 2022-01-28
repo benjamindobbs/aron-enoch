@@ -26,6 +26,8 @@ let volume_slider = document.querySelector(".volume_slider");
 let curr_time = document.querySelector(".current-time");
 let total_duration = document.querySelector(".total-duration");
 let track_lyrics = document.querySelector(".trackLyrics");
+let track_bio = document.querySelector(".bio");
+let track_feature = document.getElementById("feature");
 
 // Create the audio element for the player
 let curr_track = document.createElement('audio');
@@ -71,7 +73,7 @@ let track_list = [
     artist: "DJ Re:Code",
     image: "Image URL",
     path: "assets/mp3/05.mp3",
-    featPath: "assets/chars/Dyna_Assets.png",
+    featPath: "assets/chars/Dyna_Asset.png",
     bio: "Punkstar, rockstar, hyperpop star - no matter what you want to call Bee their skill is unmatched in all arenas. A member of I’m Letting Unseen Forces Take the Wheel and an incredible artist in their own right, Bee met Riri through her hunt to find someone to scream on a track at the last minute, only to discover the two work powerfully in tandem and have since become fast friends. Twitter comedian and a hilarious presence to be around, Riri admires Bee’s work ethic and style and wishes the two worked more, and plan to write guitar work together in the near future (Riri secretly hoping some of Bee’s amazing guitar skills will rub off on her.)",
   },
   {
@@ -87,13 +89,14 @@ let track_list = [
     artist: "DJ Re:Code",
     image: "Image URL",
     path: "assets/mp3/07.mp3",
+    featPath: "assets/chars/Recode2_Asset.png"
   },
   {
     name: "45 (feat. mothgirl)",
     artist: "DJ Re:Code",
     image: "Image URL",
     path: "assets/mp3/08.mp3",
-    featPath: "assets/chars/Astra_Asset.png",
+    featPath: "assets/chars/Astra_Asset 2.png",
     bio:"Despite having known Astra for well under a year's span, Astra and Riri have become besties and have worked both through the web and together in person. The immensely tall and stunning moth woman never ceases to surprise Riri with her talents and can seemingly write captivating music in almost any genre, and the two are regularly chatting on the timeline and shooting the shit together in text. Riri wishes Tracey could come visit so the three could party together, as all three of their energies would likely gel into a hilarious blend of internet nonsense and fun. Riri has immense respect for Astra’s unflinching seriousness when it comes to internet drama and feels grounded by her presence.",
   },
   {
@@ -101,6 +104,7 @@ let track_list = [
     artist: "DJ Re:Code",
     image: "Image URL",
     path: "assets/mp3/09.mp3",
+    featPath: "assets/chars/Recode2_Asset.png",
   },
   {
     name: "out of my head [pt. 2] (feat. 65finally)",
@@ -126,6 +130,8 @@ function loadTrack(track_index) {
   track_name.textContent = track_list[track_index].name;
   // track_artist.textContent = track_list[track_index].artist;
   track_lyrics.textContent = track_list[track_index].lyrics;
+  track_bio.textContent = track_list[track_index].bio;
+  track_feature.src= track_list[track_index].featPath;
   
   // Set an interval of 1000 milliseconds
   // for updating the seek slider
