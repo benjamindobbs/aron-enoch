@@ -85,13 +85,14 @@ let track_list = [
   {
     name: "threads [azure sky]",
     artist: "DJ Re:Code",
-    image: "assets/chars/Recode2_Asset.png",
+    image: "Image URL",
     path: "assets/mp3/07.mp3",
+    featPath: "assets/chars/Recode2_Asset.png"
   },
   {
     name: "45 (feat. mothgirl)",
     artist: "DJ Re:Code",
-    image: "assets/chars/Recode2_Asset.png",
+    image: "Image URL",
     path: "assets/mp3/08.mp3",
     featPath: "assets/chars/Astra_Asset.png",
     bio:"Despite having known Astra for well under a year's span, Astra and Riri have become besties and have worked both through the web and together in person. The immensely tall and stunning moth woman never ceases to surprise Riri with her talents and can seemingly write captivating music in almost any genre, and the two are regularly chatting on the timeline and shooting the shit together in text. Riri wishes Tracey could come visit so the three could party together, as all three of their energies would likely gel into a hilarious blend of internet nonsense and fun. Riri has immense respect for Astra’s unflinching seriousness when it comes to internet drama and feels grounded by her presence.",
@@ -99,8 +100,9 @@ let track_list = [
   {
     name: "near",
     artist: "DJ Re:Code",
-    image: "assets/chars/Recode2_Asset.png",
+    image: "Image URL",
     path: "assets/mp3/09.mp3",
+    featPath: "assets/chars/Recode2_Asset.png",
   },
   {
     name: "out of my head [pt. 2] (feat. 65finally)",
