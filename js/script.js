@@ -103,10 +103,10 @@ function loadTrack(track_index) {
   curr_track.load();
   
   // Update details of the track
-  track_art.style.backgroundImage = 
-     "url(" + track_list[track_index].image + ")";
+  // track_art.style.backgroundImage = 
+  //    "url(" + track_list[track_index].image + ")";
   track_name.textContent = track_list[track_index].name;
-  track_artist.textContent = track_list[track_index].artist;
+  // track_artist.textContent = track_list[track_index].artist;
   track_lyrics.textContent = track_list[track_index].lyrics;
   
   // Set an interval of 1000 milliseconds
