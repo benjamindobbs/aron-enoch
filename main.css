@@ -21,7 +21,29 @@ img{
     text-align: center;
 }
 .flex{
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items:center;
+}
+.playpause-track{
+  padding: 25px;
+  opacity: 0.8;
+  color:white;
+  
+  /* Smoothly transition the opacity */
+  transition: opacity .2s;
+}
+  
+/* Change the opacity when mouse is hovered */
+.playpause-track:hover {
+  opacity: 1.0;
+}
+.buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+body{
+    background-color: black;
 }
