@@ -1,0 +1,13 @@
+img{
+    max-height: 543px;
+    max-width: 543px;
+    margin: auto; 
+}
+ .flex-container {
+     display:flex;
+     flex-direction: row;
+     justify-content: space-around;
+     text-align: left;
+
+ }
+ 
