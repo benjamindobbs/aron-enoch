@@ -26,6 +26,8 @@ let volume_slider = document.querySelector(".volume_slider");
 let curr_time = document.querySelector(".current-time");
 let total_duration = document.querySelector(".total-duration");
 let track_lyrics = document.querySelector(".trackLyrics");
+let track_bio = document.querySelector(".bio");
+let track_feature = document.getElementById("feature");
 
 // Create the audio element for the player
 let curr_track = document.createElement('audio');
@@ -126,6 +128,8 @@ function loadTrack(track_index) {
   track_name.textContent = track_list[track_index].name;
   // track_artist.textContent = track_list[track_index].artist;
   track_lyrics.textContent = track_list[track_index].lyrics;
+  track_bio.textContent = track_list[track_index].bio;
+  track_feature.src= track_list[track_index].featPath;
   
   // Set an interval of 1000 milliseconds
   // for updating the seek slider
