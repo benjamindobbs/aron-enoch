@@ -26,6 +26,8 @@ let volume_slider = document.querySelector(".volume_slider");
 let curr_time = document.querySelector(".current-time");
 let total_duration = document.querySelector(".total-duration");
 let track_lyrics = document.querySelector(".trackLyrics");
+let track_bio = document.querySelector(".bio");
+let track_feature = document.getElementById("feature");
 
 // Create the audio element for the player
 let curr_track = document.createElement('audio');
@@ -36,61 +38,81 @@ let track_list = [
     artist: "DJ Re:Code",
     image: "Image URL",
     path: "assets/mp3/01.mp3",
-    lyrics: "these are lyrics I swear"
+    lyrics: "these are lyrics I swear",
+    featPath:  "assets/chars/Maya_Asset.png",
+    bio: "A wizard of audio engineering, Maya is a longtime friend of Riri and a staple in her community as a mysterious master of sound. Blurring vocals into synths and creating complex soundscapes is her forte, and no one can come close. Riri and others wonder if she truly is magic, a question Maya finds a way to dodge time and time again…",
   },
   {
     name: "out of my head (feat. tracey brakes)",
     artist: "DJ Re:Code",
     image: "Image URL",
-    path: "assets/mp3/02.mp3"
+    path: "assets/mp3/02.mp3",
+    featPath: "assets/chars/Tracey_Asset.png",
+    bio: "Twitter celebrity and Los Angeles socialite, Tracey is one of Riri’s best friends and collaborators. She struts her stuff across the web and is known far and wide for her incredible beatcraft and sample packs, community organizing, and just being an all around babe. Riri has fond memories eating hot wings and getting plastered with her bestie and when the two are together all hell breaks loose - the two are a powerhouse when together and everyone around them wonders why they live across the country from one another.",
   },
   {
     name: "keeper (feat. goji! & BIO)",
     artist: "DJ Re:Code",
     image: "Image URL",
-    path: "assets/mp3/03.mp3"
+    path: "assets/mp3/03.mp3",
+    featPath: "assets/chars/Bio_Asset.png",
+    bio: " An enigma, a genius, a cat - Bio is everywhere. A sound design legend and maestro behind the scenes, Bio’s samples and sound design are a staple in the community and are a driving force behind Riri’s sound. The cat tends to lurk as a shadowy producer behind incredible projects without having much to say, but their influence is felt throughout the entire scene. Riri sometimes wonders how Bio got so orange, a question Bio answers with “Hi Bio” and scurries off at lightspeed, leaving many to wonder what is Bio’s true feelings.",
+    bioTwo:"   No one has swag quite like Goji. A fashion icon and a lyrical craftsman, Goji brings their style and flair into every project they touch and Riri often envy's their precision. Riri met Goji through Tracey and after working together in her cramped apartment they became fast friends, spending time together in LA and relating about both having grown up in the frigid east coast.",
+   
   },
   {
     name: "adhd (feat. tobre)",
     artist: "DJ Re:Code",
     image: "Image URL",
     path: "assets/mp3/04.mp3",
+    featPath: "assets/chars/Tobre_Asset.png",
+    bio: " One of Riri’s best and trusted friends, Londonite Isaac is a pop icon and lyrical and production genius. Co-founding Rock Angelz and having worked together on the classic pop anthem “Love Connect,” Isaac and Riri are an inseparable duo and are happy to be reunited again on ReCodePop! Riri, possessed by Isaac’s classic “ILYL,” unable to stop singing its infectious chorus, dm’d Isaac out of obsessive fervor desperate to work together, and ever since the two hit it off and have been in a bestie trio with the legendary Ryl0 and other pop icons. Isaac is a master of camp, and his connections to the drag community and the trans community in England show his devotion to queer craft. Riri has been dying to fly to London to spend some time with her bestie, but things just keep getting in the way.",
   },
   {
     name: "surrender (feat. dynastic)",
     artist: "DJ Re:Code",
     image: "Image URL",
     path: "assets/mp3/05.mp3",
+    featPath: "assets/chars/Dyna_Asset.png",
+    bio: "Punkstar, rockstar, hyperpop star - no matter what you want to call Bee their skill is unmatched in all arenas. A member of I’m Letting Unseen Forces Take the Wheel and an incredible artist in their own right, Bee met Riri through her hunt to find someone to scream on a track at the last minute, only to discover the two work powerfully in tandem and have since become fast friends. Twitter comedian and a hilarious presence to be around, Riri admires Bee’s work ethic and style and wishes the two worked more, and plan to write guitar work together in the near future (Riri secretly hoping some of Bee’s amazing guitar skills will rub off on her.)",
   },
   {
     name: "treasure box (feat. iris day)",
     artist: "DJ Re:Code",
     image: "Image URL",
     path: "assets/mp3/06.mp3",
+    featPath: "assets/chars/Iris_Asset.png",
+    bio: "In truth, Riri doesn’t know much about Melancholia, besides that she’s a South African lyrical prodigy and emo genius. Serious and to the point, Riri has immense respect for Mela and her influence in the scene is immense, and Riri is looking forward to a trip to see both her and their longtime mutual friend Boxkitty.",
   },
   {
     name: "threads [azure sky]",
     artist: "DJ Re:Code",
     image: "Image URL",
     path: "assets/mp3/07.mp3",
+    featPath: "assets/chars/Recode2_Asset.png"
   },
   {
     name: "45 (feat. mothgirl)",
     artist: "DJ Re:Code",
     image: "Image URL",
     path: "assets/mp3/08.mp3",
+    featPath: "assets/chars/Astra_Asset 2.png",
+    bio:"Despite having known Astra for well under a year's span, Astra and Riri have become besties and have worked both through the web and together in person. The immensely tall and stunning moth woman never ceases to surprise Riri with her talents and can seemingly write captivating music in almost any genre, and the two are regularly chatting on the timeline and shooting the shit together in text. Riri wishes Tracey could come visit so the three could party together, as all three of their energies would likely gel into a hilarious blend of internet nonsense and fun. Riri has immense respect for Astra’s unflinching seriousness when it comes to internet drama and feels grounded by her presence.",
   },
   {
     name: "near",
     artist: "DJ Re:Code",
     image: "Image URL",
     path: "assets/mp3/09.mp3",
+    featPath: "assets/chars/Recode2_Asset.png",
   },
   {
     name: "out of my head [pt. 2] (feat. 65finally)",
     artist: "DJ Re:Code",
     image: "Image URL",
     path: "assets/mp3/10.mp3",
+    featPath: "assets/chars/Judas._Asset.png",
+    bio: "One of the funniest people Riri knows, Judas’s dark humor and bewildering internet presence can trick one into thinking they must be an abstract experimental musician, but Judas has a golden voice and their harmonies alone can make Riri cry. Ever since listening to Judas sing a breathtaking rendition of a Ween’s “What's Deaner Talking About,” Riri has been possessed to work with the mysterious artist and is happy to have finally have their velvet melodies on one of her songs.",
   },
 ];
 function loadTrack(track_index) {
@@ -103,11 +125,13 @@ function loadTrack(track_index) {
   curr_track.load();
   
   // Update details of the track
-  track_art.style.backgroundImage = 
-     "url(" + track_list[track_index].image + ")";
+  // track_art.style.backgroundImage = 
+  //    "url(" + track_list[track_index].image + ")";
   track_name.textContent = track_list[track_index].name;
-  track_artist.textContent = track_list[track_index].artist;
+  // track_artist.textContent = track_list[track_index].artist;
   track_lyrics.textContent = track_list[track_index].lyrics;
+  track_bio.textContent = track_list[track_index].bio;
+  track_feature.src= track_list[track_index].featPath;
   
   // Set an interval of 1000 milliseconds
   // for updating the seek slider
