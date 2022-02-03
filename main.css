@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 button{
     background-color: transparent;
     color: black;
@@ -24,4 +25,33 @@ button{
     display: flex;
     justify-content: center;
     align-items:center;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.rowCenter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    max-width: 60%;
+}
+img{
+    height: 25rem;
+    margin: auto;
+  }
+a{
+    align-self: center;
+    justify-self: center;
+}
+body{
+    font-family: 'Roboto', sans-serif;
 }
