@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <title> ReCodePop Full Album</title>
+    <link rel="icon" href="assets/favicon.PNG">
+</head>
+<HTML>
+
+<body>
+    <script src="js/fade.js"></script>
+    <script src="js/navDrawer.js"></script>
+    <div style="max-height:95%">
+        <div class="player">
+            <div class="row">
+                <div class="buttons" style="align-self: center;">
+                    <div class="prev-track" onclick="prevTrack()">
+                        <i class="fa fa-step-backward fa-2x"></i>
+                    </div>
+                    <div class="playpause-track" onclick="playpauseTrack()">
+                        <i class="fa fa-play-circle fa-5x"></i>
+                    </div>
+                    <div class="next-track" onclick="nextTrack()">
+                        <i class="fa fa-step-forward fa-2x"></i>
+                    </div>
+                    <div class="track-name"></div>
+                </div>
+                </div>
+                <div class="slider_container">
+                    <div class="current-time">00:00</div>
+                    <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+                    <div class="total-duration">00:00</div>
+                </div>
+
+                <!-- Define the section for displaying the volume slider-->
+                <div class="slider_container">
+                    <i class="fa fa-volume-down"></i>
+                    <input type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolume()">
+                    <i class="fa fa-volume-up"></i>
+                </div>
+            </div>
+            <div class="row" style="align-self: flex-start;">
+                <div>
+                    <h3> Lyrics </h3>
+                    <div class="trackLyrics"> </div>
+                </div>
+                <div class="col" style="align-self: flex-start;">
+                    <img id="feature" > </img>
+                    <div class="bio"> </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- <button class="button" onclick="history.back()" style="align-self: flex-end;"> Back </button> -->
+    <!-- Load the main script for the player -->
+    <script src="js/script.js"></script>
+    </div>
+    <script>
+        loadTrack(0);
+    </script>
+    </div>
+</body>
+
+</HTML>
