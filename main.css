@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 button{
     background-color: transparent;
     color: black;
@@ -9,7 +10,7 @@ button{
     font-size: 1em;
     border-radius: 1em;
 }
-img{
+.homeImg{
     max-height: 100%;
     max-width: 100%;
 }
@@ -21,29 +22,36 @@ img{
     text-align: center;
 }
 .flex{
-    height: 100%;
     display: flex;
     justify-content: center;
     align-items:center;
 }
-.playpause-track{
-  padding: 25px;
-  opacity: 0.8;
-  color:white;
-  
-  /* Smoothly transition the opacity */
-  transition: opacity .2s;
-}
-  
-/* Change the opacity when mouse is hovered */
-.playpause-track:hover {
-  opacity: 1.0;
-}
-.buttons {
+.row{
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
+}
+.rowCenter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    max-width: 60%;
+}
+img{
+    height: 25rem;
+    margin: auto;
   }
+a{
+    align-self: center;
+    justify-self: center;
+}
 body{
-    background-color: black;
+    font-family: 'Roboto', sans-serif;
 }

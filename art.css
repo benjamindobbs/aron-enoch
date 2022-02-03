@@ -1,0 +1,27 @@
+h1 {
+    text-align: center;
+    font-size: 3em;
+}
+
+
+.a1 {
+    display: flex;
+    flex-wrap: wrap;
+    border-style: solid;
+    border-radius: 0.5em;
+    padding: 1em;
+}
+
+
+img {
+    max-width: 25em;
+    height: auto;
+    float: center;
+}
+
+
+.artDiv {
+    align-content: center;
+    text-align: center;
+    padding: 1em;
+}
