@@ -6,4 +6,13 @@ document.write( '        <a href=\"art.html\">Artwork/Media</a>\n' );
 // document.write( '        <a href=\"tickets.html\">Live Shows</a>\n' );
 // document.write( '        <a href=\"page4.html\">Socials</a>\n' );
 document.write( '    </div>\n' );
-document.write( '    <i class=\"material-icons\" onclick=\"openNav()\">menu</i>' );
+document.write( '    <i class=\"material-icon\" onclick=\"openNav()\">menu</i>' );
+/* Set the width of the side navigation to 250px */
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+  }
+  
+  /* Set the width of the side navigation to 0 */
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
