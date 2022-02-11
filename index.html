@@ -4,13 +4,17 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <title> ReCodePop! </title>
   <link rel="icon" href="assets/favicon.PNG">
- 
-  <script src="js/script.js"></script>
 </head>
 <html>
 
 <body>
   <script src="js/navDrawer.js"></script>
+  <script>
+    const path = url.pathname;
+    url.pathname = home;
+    console.log(url.pathname);
+
+    </script>
   <div class="center">
     <img class="homeImg" src="assets/mainLogo.PNG">
   </div>
