@@ -1,7 +1,11 @@
+let messages = ["/ghostMessages/message1.mp3","./assets/ghostMessages/message2.mp3","./assets/ghostMessages/message3.mp3","./assets/ghostMessages/message4.mp3","./assets/ghostMessages/message5.mp3","./assets/ghostMessages/message6.mp3","./assets/ghostMessages/message7.mp3"]
 let curr_track = document.createElement('audio');
-curr_track.load();
-curr_track.src ="assets/ghostMessages/message1.mp3";
+
+function loadTrack(trackNumber){
+    curr_track.src = messages[trackNumber];
+}
 let isPlaying= false;
+curr_track.load();
 let playpause_btn = document.querySelector(".playpause-track");
 curr_track.addEventListener("ended", history.back());
 
