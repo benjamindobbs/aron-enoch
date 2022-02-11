@@ -37,7 +37,7 @@ let track_list = [
     name: "out of my head (feat. tracey brakes)",
     artist: "DJ Re:Code",
     image: "Image URL",
-    lyrics: " I can feel \r\n Out of my head Words that I said \r\n Tell me the truth \r\n \r\n I can feel \r\n Out of my head \r\n Things that I said \r\n Make me aloof\r\n Tell me the truth\r\n Live through me\r\n Can\'t see (awoo)\r\n Tell me the truth\r\n\r\n I can feel\r\n Out of my head\r\n Things that I said\r\n Make me aloof\r\n Tell me the truth\r\n Live through me\r\n Can\'t see (awoo)\r\n Tell me the truth\r\n\r\n I can feel\r\n Out of my head\r\n Things that I said\r\n Make me aloof\r\n Tell me the truth\r\n\r\n Tell me the truth (msg 1)\r\n\r\n May the sea hide my sorrow\r\n Pray poseidon feels not shallow\r\n These bones unfit and hollow\r\n Foreign vessel interloper\r\n Hide behind, crumbs I find\r\n Scattered pieces of a broken lifetime\r\n Some day I, I will try\r\n To build a bridge between my body and my mind ",
+    lyrics: '<p> I can feel \r\n Out of my Words that I said \r\n Tell me the truth \r\n \r\n I can feel \r\n Out of my head \r\n Things that I said \r\n Make me aloof\r\n Tell me the truth\r\n Live through me\r\n Can\'t see (awoo)\r\n Tell me the truth\r\n\r\n I can feel\r\n Out of my head\r\n Things that I said\r\n Make me aloof\r\n Tell me the truth\r\n Live through me\r\n Can\'t see (awoo)\r\n Tell me the truth\r\n\r\n I can feel\r\n Out of my head\r\n Things that I said\r\n Make me aloof\r\n Tell me the truth\r\n\r\n Tell me the truth (msg 1)\r\n\r\n May the sea hide my sorrow\r\n Pray poseidon feels not shallow\r\n These bones unfit and hollow\r\n Foreign vessel interloper\r\n Hide behind, crumbs I find\r\n Scattered pieces of a broken lifetime\r\n Some day I, I will try\r\n To build a bridge between my body and my mind<p>',
     path: "assets/mp3/02.mp3",
     featPath: "assets/chars/Tracey_Asset.png",
     bio: "Twitter celebrity and Los Angeles socialite, Tracey is one of Riri\'s best friends and collaborators. She struts her stuff across the web and is known far and wide for her incredible beatcraft and sample packs, community organizing, and just being an all around babe. Riri has fond memories eating hot wings and getting plastered with her bestie and when the two are together all hell breaks loose - the two are a powerhouse when together and everyone around them wonders why they live across the country from one another.",
@@ -130,7 +130,7 @@ function loadTrack(track_index) {
   //    "url(" + track_list[track_index].image + ")";
   track_name.textContent = track_list[track_index].name;
   // track_artist.textContent = track_list[track_index].artist;
-  track_lyrics.textContent = track_list[track_index].lyrics;
+  track_lyrics.innerHTML = track_list[track_index].lyrics;
   track_bio.textContent = track_list[track_index].bio;
   track_feature.src= track_list[track_index].featPath;
   
