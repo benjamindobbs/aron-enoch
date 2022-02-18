@@ -1,13 +1,14 @@
-let messages = ["../ghostMessages/message1.mp3","../assets/ghostMessages/message2.mp3","../assets/ghostMessages/message3.mp3","../assets/ghostMessages/message4.mp3","../assets/ghostMessages/message5.mp3","../assets/ghostMessages/message6.mp3","../assets/ghostMessages/message7.mp3"]
+let messages = ["../assets/ghostMessages/message1.mp3","../assets/ghostMessages/message2.mp3","../assets/ghostMessages/message3.mp3","../assets/ghostMessages/message4.mp3","../assets/ghostMessages/message5.mp3","../assets/ghostMessages/message6.mp3","../assets/ghostMessages/message7.mp3"];
 let curr_track = document.createElement('audio');
-curr_track.src = messages[1];
+let isPlaying= false;
+let playpause_btn = document.querySelector(".playpause-track");
 function loadTrack(trackNumber){
     curr_track.src = messages[trackNumber];
+    curr_track.autoplay = true;
+    curr_track.load();
+    curr_track.addEventListener('ended', function(){
+        back()});
 }
-let isPlaying= false;
-curr_track.load();
-let playpause_btn = document.querySelector(".playpause-track");
-// curr_track.addEventListener("ended", history.back());
 
 function playpauseTrack() {
     // Switch between playing and pausing
@@ -32,4 +33,7 @@ function playpauseTrack() {
     
     // Replace icon with the play icon
     playpause_btn.innerHTML = '<i class="fa fa-play-circle fa-5x"></i>';
+  }
+  function back(){
+    history.back()
   }

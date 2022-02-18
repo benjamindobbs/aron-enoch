@@ -10,6 +10,7 @@ h1 {
     border-style: solid;
     border-radius: 0.5em;
     padding: 1em;
+    justify-content: space-between;
 }
 
 
@@ -20,10 +21,5 @@ img {
 }
 
 
-div {
-    align-content: center;
-    text-align: center;
-    padding: 1em;
-}
 
 
