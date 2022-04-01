@@ -1,9 +1,37 @@
 .button1 {
 
     border-style: solid;
-    color: white;
+    color:white;
     padding: 0.5em;
     text-align: center;
     font-size: 2em;
   }
 
+<<<<<<< HEAD
+=======
+div {
+  padding: 1em;
+}
+
+ .row {
+    display: flex;
+    flex-wrap: wrap;
+    border-style: solid;
+    border-radius: 0.5em;
+    padding: 1em;
+    justify-content: left;
+ }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    
+  }
+
+  img {
+    max-width: 25em;
+    height: auto;
+    float: center;
+}
+>>>>>>> 220afb8938ad93d0e4533746949e0eccda1ca86a
