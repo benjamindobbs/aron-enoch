@@ -47,7 +47,9 @@ div {
     max-width: 25em;
     height: auto;
     float: center;
+
     border-style: solid;
     border-radius: 0.5em;
     
 }
+
