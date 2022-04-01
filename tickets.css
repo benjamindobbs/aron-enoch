@@ -7,11 +7,11 @@
     font-size: 2em;
   }
 
-div {
+/* div {
   padding: 1em;
   justify-content: center;
   
-}
+} */
 
  .row {
     display: flex;
@@ -20,6 +20,7 @@ div {
     border-style: solid;
     border-radius: 0.5em;
     margin:auto;
+    padding: 1em;
     
  }
 
