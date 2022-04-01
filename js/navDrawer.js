@@ -6,4 +6,4 @@ document.write( '        <a href=\"art.html\">Artwork/Media</a>\n' );
 // document.write( '        <a href=\"tickets.html\">Live Shows</a>\n' );
 // document.write( '        <a href=\"page4.html\">Socials</a>\n' );
 document.write( '    </div>\n' );
-document.write( '    <i class=\"material-icons\" onclick=\"openNav()\">menu</i>' );
+document.write( '    <i class=\"material-icon\" onclick=\"openNav()\">menu</i>' );
