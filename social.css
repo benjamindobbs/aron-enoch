@@ -1,0 +1,23 @@
+body {
+      text-align: center;
+}
+
+.Socials {
+   
+    box-sizing: border-box;
+    display: flex;
+}
+
+.column1 {
+    float: left;
+    width: 50%;
+    height: 50%;
+    display: flex;
+}
+
+.column2 {
+    float: right;
+    width: 50%;
+    height: 50%;
+    display: flex;
+}
