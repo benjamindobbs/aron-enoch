@@ -4,7 +4,7 @@ document.write( '        <a href=\"index.html\">Home</a>\n' );
 document.write( '        <a href=\"track_placeholder.html\">ReCodePop! (Full Album)</a>\n' );
 document.write( '        <a href=\"art.html\">Artwork/Media</a>\n' );
 document.write( '        <a href=\"tickets.html\">Live Shows</a>\n' );
-document.write( '        <a href=\"socials.html\">Socials</a>\n' );
+document.write( '        <a href=\"socials .html\">Socials</a>\n' );
 document.write( '    </div>\n' );
 document.write( '    <i class=\"material-icon\" onclick=\"openNav()\">menu</i>' );
 /* Set the width of the side navigation to 250px */
