@@ -6,18 +6,28 @@ body {
    
     box-sizing: border-box;
     display: flex;
+    align-items: center;
 }
 
 .column1 {
-    float: left;
+    float: center;
     width: 50%;
     height: 50%;
     display: flex;
+    padding: 5em;
+    padding-left: 28em;
 }
 
 .column2 {
-    float: right;
+    float: center;
     width: 50%;
     height: 50%;
     display: flex;
+    padding: 5em;
+    padding-left: 25em;
 }
+
+a {padding-right: 2em;
+    
+}
+
